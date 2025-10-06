@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💰 Expense Tracker</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>💰 Expense Tracker</header>
+
+  <div class="container">
+    <!-- Add Expense -->
+    <div class="card">
+      <h3>Add Expense</h3>
+      <input type="text" id="title" placeholder="Enter expense title">
+      <input type="number" id="amount" placeholder="Enter amount">
+      <select id="category">
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+      </select>
+      <button id="addBtn">+ Add Expense</button>
+    </div>
+
+    <!-- Expense List -->
+    <div class="card">
+      <h3>📋 Expense List</h3>
+      <div id="expenseList"></div>
+    </div>
+
+    <!-- Summary -->
+    <div class="card">
+      <h3>📊 Summary</h3>
+      <p>Total: ₹<span id="total"></span></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Expense Tracker | Made with using OOPs
+  </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
